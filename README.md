@@ -9,4 +9,6 @@ Environment
 - [SpringCloud Alibaba](https://spring.io/projects/spring-cloud-alibaba) 2022.0.0.0-RC1
 
 
-在使用的时候 如果本机调试的时候有多个ip 很容易会注册成你不想要的ip需要在 env中设置 DUBBO_IP_TO_BIND=xx.xx.xx.xx
+在使用的时候 如果本机调试的时候，有时候机器会有多张网卡，包括docker网卡等
+在nacos注册中心会看到不是你的本机ip 比如我是10.251.1.1 但是我本机ip是10.64.xx.xx
+很容易会注册成你不想要的ip需要在 env中设置 DUBBO_IP_TO_BIND=10.64.xx.xx
